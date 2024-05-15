@@ -90,19 +90,74 @@
 
 
 
+// to check if the number is prime or not 
+
+
+// function checkPrime(num){
+//     let count=0;
+//     if(num==1){
+//         return "number is not prime"
+//     }
+//     for(let i=2;i<num;i++){
+//         if(num%i==0){
+//             count++;
+//         }
+//     }
+//     if(count==0){
+//         return "number is prime"
+//     }else{
+//         return "number is not prime"
+//     }
+
+
+// }
+// console.log(checkPrime(8));
 
 
 
 
 
+//to find first N prime numbers 
+
+function findPrime(num){
+   
+    if(num == 0){
+        return "their is no prime number"
+    }
+    let i=2;
+    while(num>0){
+
+        //  check prime number using recursion
+        if(prime(i)){
+            console.log(i);
+            num--;
+        }
+        i++;
+    }
+
+
+}
+
+function prime(n){
+    if(n==2 || n==3){
+        return true;
+    }
+    let count=0;
+    for(let i=2;i<n;i++){
+        if(n%i==0){
+            count++;
+        }
+    }
+    if(count==0){
+        return true;
+    }else{
+        return false;
+    }
+}
 
 
 
-
-
-
-
-
+findPrime(11);
 
 
 

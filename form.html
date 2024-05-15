@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
     <link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
 </head>
 <body>
   <div class="register-form">
@@ -19,15 +20,17 @@
         <p>Enter your Email:</p>
         <input type="email" placeholder="Enter Email"  required>
         <p>Create your Password: </p>
-        <input type="password" placeholder="Password"  required>
+        <input type="password" placeholder="Password" pattern="[a-z0-5]{8,}" id="pass" required>
+        <p id="password" style="font-size: 15px; color: red; "></p>
         <p>Enter your Age: </p>
-        <input type="number" placeholder="Enter age"  required>
+        <input type="number" placeholder="Enter age" id="age"  min="18" >
+        <p id="underAge" style="font-size: 15px; color: red; "><p>
         <p>Upload a profile picture(optional):</p>
         <input type="file"   >
         <p>Provide a Bio: </p>
         <textarea placeholder="i like coding..."></textarea><br>
 
-        <input type="submit" value="submit">
+        <input type="submit" value="submit" onclick="Age()">
       </div>
         
     </form>
