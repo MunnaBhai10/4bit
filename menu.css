@@ -1,0 +1,69 @@
+
+body{
+    font-family: sans-serif;
+  padding: 20px;
+    background:url(https://imgs.search.brave.com/_vqplaSPcCfgjDjKyXA_0aDa880SkZtFdew1iy6n2eg/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/OTgxOTgxNTI0Njkt/MTcyY2Q4MGQ3YTI0/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TVRGOGZH/TnZabVpsWlNVeU1H/SmxZVzV6ZkdWdWZE/QjhmREI4Zkh3dw.jpeg);
+    
+
+}
+    h1,h2,p{
+        text-align: center;
+       
+        
+    }
+.menu{
+    background-color: rgb(169, 138, 97);
+    width: 80%;
+    margin: auto;
+    max-width: 500px;
+    padding: 20px;
+
+
+   
+}
+hr {
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+  }
+  .item p{
+    /* background-color: aqua; */
+    display: inline-block;
+    margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  }
+  .flavor{
+    text-align: left;
+    width: 60%;
+  }
+  .price{
+    text-align: right;
+    width: 40%;
+  }
+  /* .item {
+    border: 1px solid black;
+  } */
+  article{
+    margin: 5px;
+  }
+  .last-hr{
+    margin-top: 25px;
+  }
+  footer{
+    font-size: 14px;
+  }
+  .lastP{
+    margin-bottom: 20px;
+  }
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+  a:hover{
+    text-decoration: underline;
+    color: brown;
+  }
+  .changePrice{
+    text-align: left;
+  }

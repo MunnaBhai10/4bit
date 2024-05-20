@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+}
+header {
+    width: 100%;
+    height: 10%;
+    background-color: rgb(163, 107, 5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed; */
+    top: 0;
+    border: 1px solid black;
+  }
+  #logo {
+    /* position: relative;
+    left: 5%; */
+    /* width: max(100px, 18vw); */
+    /* background-color: orange; */
+    padding: 5px;
+    height: 100%;
+    width: 50%;
+    max-width: 100px;
+    /* background-color: beige; */
+  }
+  h1 {
+    margin-left: 10px;
+    color: #000;
+    font-size: min(5vw, 1.2em);
+    font-size: max(5.5vw,1.3em);
+    text-align: center;
+    /* background-color: azure; */
+  }
+  nav {
+    /* position: fixed; */
+    width: 50%;
+    max-width: 400px;
+    height: 100%;
+    /* background-color: aquamarine; */
+    margin: 20px;
+    
+  }
+  nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+  }
+  nav > ul > li {
+    position: relative;
+    right: 10px;
+    color: black;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    display: block;
+    font-size: 150%;
+  }
+  li > a {
+    color: inherit;
+    text-decoration: none;
+  }
+  nav > ul > li:hover {
+    background-color: orange;
+    color: #1b1b32;
+    border-radius: 40%;
+    /* cursor: pointer; */
+  }
+
+/* .imgDiv{
+  position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    border: 1px solid black;
+    max-width: 48rem;
+    margin: 0 auto;
+} */
+  /* .imgDiv > img {
+    width: 70%;
+    height: 50%;
+    margin-top: 10px;
+
+  } */
+  h1{
+    margin-top: 10px;
+   color: #000;
+    font-size: large;
+  }
+  .container{
+    padding: 2rem;
+  }
+.slider-wrapper{
+  position: relative;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.slider{
+  display: flex;
+  aspect-ratio: 16/9;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%,0%,0.25);
+  border-radius: 0.5rem;
+}
+.slider img{
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+.slider-nav{
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.slider-nav a{
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: gray;
+  opacity: 0.75;
+  transition: opacity 250ms ease  ;
+}
+
+.slider-nav a:hover{
+  opacity: 1;
+} 
+
+.article{
+  /* background-color: red; */
+  /* width: 100%; */
+  height: 200px;
+  margin: 10px;
+}
+article{
+  width: 60%;
+  /* border: 1px solid cadetblue; */
+  position: absolute;
+  left: 1%;
+  
+}
+article > h1{
+  margin:5px 0 ;
+  text-align: center;
+  font-size: xx-large;
+  color: #000;
+}
+
+.article{
+  /* border: 5px solid black; */
+  margin: 5px;
+
+}
+.rusk-img{
+  position: relative;
+  left: 60%;
+  width: 10rem;
+  height: 9.5rem;
+  /* background-color: #000; */
+}
+.article > p{
+  font-size: 1em;
+}
+ video{
+  position: absolute;
+  left: 20%;
+}
+.video-section{
+  margin: 20px 0;
+  /* background-color: #000; */
+  height: 300px;
+}
+.video-section > article > p{
+  /* background-color: #8d8b8b; */
+  position: absolute;
+  left: 70%;
+  width: 40%;
+  height: 50%;
+  color: #000;
+  /* border: solid red; */
+}
+footer {
+  background-color: rgb(199, 134, 12);
+  display: flex;
+  justify-content: center;
+}
+
+footer,
+footer a {
+  color: #dfdfe2;
+}
+
+address {
+  text-align: center;
+  padding: 0.3em;
+} 
+@media (max-width: 1000px) and (min-width: 500px){
+  
+  video{
+    position: absolute;
+    left: 5%;
+    width: 200;
+  }
+  .video-section{
+    margin: 20px 0;
+    background-color: #000;
+    height: 250px;
+  }
+  .video-section > article > p{
+    /* background-color: #8d8b8b; */
+    position: absolute;
+    left: 100%;
+    width: 70%;
+    height: 50%;
+    color: #fff;
+  }
+  
+    }
