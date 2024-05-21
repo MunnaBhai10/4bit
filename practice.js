@@ -119,47 +119,59 @@
 
 //to find first N prime numbers 
 
-function findPrime(num){
+// function findPrime(num){
    
-    if(num == 0){
-        return "their is no prime number"
-    }
-    let i=2;
-    while(num>0){
+//     if(num == 0){
+//         return "their is no prime number"
+//     }
+//     let i=2;
+//     while(num>0){
 
-        //  check prime number using recursion
-        if(prime(i)){
-            console.log(i);
-            num--;
+//         //  check prime number using recursion
+//         if(prime(i)){
+//             console.log(i);
+//             num--;
+//         }
+//         i++;
+//     }
+
+
+// }
+
+// function prime(n){
+//     if(n==2 || n==3){
+//         return true;
+//     }
+//     let count=0;
+//     for(let i=2;i<n;i++){
+//         if(n%i==0){
+//             count++;
+//         }
+//     }
+//     if(count==0){
+//         return true;
+//     }else{
+//         return false;
+//     }
+// }
+
+
+
+// findPrime(11);
+
+let newarry=[];
+let row=[];
+function matrix(a,b){
+    for(let i=0;i<a;i++){
+
+        for(let j=i;j<b;j++){
+            row.push(0);
         }
-        i++;
-    }
-
-
-}
-
-function prime(n){
-    if(n==2 || n==3){
-        return true;
-    }
-    let count=0;
-    for(let i=2;i<n;i++){
-        if(n%i==0){
-            count++;
-        }
-    }
-    if(count==0){
-        return true;
-    }else{
-        return false;
+        newarry.push(row)
     }
 }
-
-
-
-findPrime(11);
-
-
+matrix(3,2)
+console.log(newarry)
 
 
 
