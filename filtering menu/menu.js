@@ -1,6 +1,6 @@
-const liItem=document.querySelectorAll('ul li');
+const liItem = document.querySelectorAll('ul li');
 console.log(liItem);
-const imgItem= document.querySelectorAll('.product > .card')
+const imgItem = document.querySelectorAll('.product > .card')
 console.log(imgItem);
 
 
@@ -20,7 +20,8 @@ liItem.forEach(li => {
         
         if ( img.getAttribute('data-filter')=== value.toLowerCase()|| value=="All") {
             img.style.display='block' 
-        }else{
+        }
+        else{
             img.style.display="none";
         }
     })

@@ -59,11 +59,12 @@ ul li.active{
 
 }
 .card-img-top{
-    height: 70%;
+    height: 60%;
 }
 /* .card-text{
     background-color: aqua;
 } */
 .card-body{
     background-color: bisque;
+    
 }
