@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Number Guessing Game</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Logo</a>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <span class="navbar-text">
+                Number Guessing Game
+            </span>
+        </div>
+    </nav>
+
+    <div class="container">
+            <section>
+                <h3>Enter your guess</h3>
+                <p>From 1-9</p>
+                <input type="number" id="input">
+               
+                <h6 id="result"></h6>
+<div class="buttons">
+                <div class="row">
+                    <button class="button" onclick="setGuess(9)">9</button>
+                    <button class="button" onclick="setGuess(8)">8</button>
+                    <button class="button" onclick="setGuess(7)">7</button>
+                </div>
+                <div class="row">
+                    <button class="button" onclick="setGuess(6)">6</button>
+                    <button class="button" onclick="setGuess(5)">5</button>
+                    <button class="button" onclick="setGuess(4)">4</button>
+            
+                </div>
+                <div class="row">
+                    <button class="button" onclick="setGuess(3)">3</button>
+                    <button class="button" onclick="setGuess(2)">2</button>
+                    <button class="button" onclick="setGuess(1)">1</button>
+                </div>
+                <div class="row">
+                    <button class="button" onclick="setGuess(0)">0</button>
+                    
+                </div>
+            </div>
+                <button type="submit" onclick="game()">submit</button>
+            </section>
+        
+    </div>
+<script>
+
+function setGuess(value) {
+            document.getElementById("input").value = value;
+        }    
+
+
+function game(){
+    let myguess=parseInt(document.getElementById("input").value)
+let random =Math.floor( Math.random()*10)
+if(myguess==random){
+    document.getElementById("result").innerHTML="Congrats, you have guessed correct number!"
+}else{
+    document.getElementById("result").innerHTML="Sorry, your guess is incorrect! the number is "+random
+}
+    
+}
+
+</script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
