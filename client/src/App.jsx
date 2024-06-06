@@ -1,35 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
+import Card from "./Card.jsx";
+import Button from "./button.jsx";
+import Student from "./Student.jsx";
+import Greeting from "./Greeting.jsx";
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
+  return(
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          ONE TAP {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <Greeting isLoggedin={true} username="Prabesh" />
+    <Card></Card>
+    <Card></Card><br />
+    <Student name="Prabesh" age={20} isStudent={true}/>
+    <Student name="Biplop" age={50} isStudent={false}/>
+    <Student name="Aayush" age={10} isStudent={true}/>
+    <Student name="Aryan"/>
+    <Button/>
+    
     </>
-  )
+  );
 }
 
 export default App
