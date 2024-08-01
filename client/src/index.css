@@ -1,3 +1,8 @@
+
+*{
+margin: 0;
+padding: 0;
+}
 .card{
     border: 1px solid black;
     border-radius: 10px;
@@ -50,4 +55,26 @@
         text-align: center;
         margin: 0;
     
+}
+.category{
+    background-color: rgb(64, 173, 209);
+    font-size: 2.5em;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.list{
+    font-size: 2em;
+    list-style: none;
+    color: hsl(0, 0%, 25%);
+    text-align: center;
+    margin: 0;
+}
+.list li:hover{
+    color: hsl(0, 0%, 45%);
+    cursor: pointer;
 }

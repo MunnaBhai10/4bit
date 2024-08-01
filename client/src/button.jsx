@@ -10,6 +10,7 @@ function Button(){
             borderRadius: "8px"
        
     }
-return(<button style={styles}>Click Me!</button>);
+    const handleCLick =()=> console.log('Hello Prabesh ');
+return(<button style={styles} onClick={handleCLick}>Click Me!</button>);
 }
 export default Button
