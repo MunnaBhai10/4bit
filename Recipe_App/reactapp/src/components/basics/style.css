@@ -16,6 +16,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  
 }
 
 .card {
@@ -55,4 +56,33 @@ body {
   color: #2a9d8f;
   font-size: 1.2em;
   margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #343a40;
+  padding: 1rem;
+  width: 100vw;
+}
+
+.nav-button {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #5a6268;
+}
+
+.nav-button:focus {
+  outline: none;
+  background-color: #33b85f;
 }
