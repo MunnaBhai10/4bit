@@ -1,0 +1,193 @@
+/* style.css */
+
+body {
+    background-color: #0f0c29;
+    background-image: linear-gradient(315deg, #0f0c29 0%, #302b63 74%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.main-div {
+    width: 400px;
+    background: #1e1e2f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.child-div {
+    text-align: center;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.addItems {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.addItems input {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.addItems .add-btn {
+    width: 15%;
+    font-size: 1.5rem;
+    color: #fff;
+    background: #ff5733;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ShowItems {
+    margin-top: 30px;
+}
+
+.eachItems {
+    background: #46244c;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.eachItems h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.todo-btn {
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+}
+
+.todo-btn .add-btn {
+    background: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.showItem {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.add.btn {
+    background: #4caf50;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.remove.btn {
+    background: #ff5733;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.effect04 {
+    position: relative;
+    border: none;
+    background: none;
+    color: #fff;
+    font-weight: 700;
+    outline: none;
+    padding: 10px 20px;
+}
+
+.effect04:before {
+    content: attr(data-sm-link-text);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f5f1ef;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.effect04:hover:before {
+    opacity: 1;
+    transform: translate(-50%, -100%);
+}
+
+.effect04 span {
+    display: block;
+    transition: all 0.3s;
+}
+
+.effect04:hover span {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+@media (max-width: 768px) {
+    .main-div {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .addItems {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .addItems input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .addItems .add-btn {
+        width: 100%;
+    }
+
+    .eachItems {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .todo-btn {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+}
+
